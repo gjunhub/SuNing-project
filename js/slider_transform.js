@@ -71,7 +71,7 @@ document.addEventListener('touchstart',function(e){
 		now = -Math.round(nowLeft / liw);
 		/*判断如果没有啦过一张图的一半 ，那就还原拖拽前的位置，超过
 		一张的图一半，那就拖拽到下一张。所以用四舍五入。*/
-		
+		console.log(nowLeft,'now');
 		nowLeft = liw * now;//同步当前的left的值。
 		startMove({
 			el: topShow,
